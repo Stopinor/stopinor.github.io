@@ -455,6 +455,14 @@ footer{background:var(--c-dark);padding:0}
   .instr-g{grid-template-columns:1fr}
   .instr-card[style*="grid-column"]{grid-column:auto}
 }
+
+  /* Фикс горизонтальной прокрутки таблиц на мобильных */
+.cpanel table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
 </style>
 </head>
 <body>
